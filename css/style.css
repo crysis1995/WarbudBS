@@ -1,0 +1,62 @@
+body {
+    background-color: #293348;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    margin: 0px;
+    font-size: 1.2em;
+    background-image: url("file:///C:/Users/Adrian/Desktop/BS/BSWeb/img/W.svg");
+}
+
+p{
+    margin: 0px;
+}
+
+a, a:hover{
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.home{
+width: 20px;
+}
+
+nav{
+    height: 10vh - 1.2em;
+    padding: calc((10vh - 1.2em)/2);
+}
+
+main{
+    margin-top: 30px;
+    padding: 0em;
+    height: 85vh - 30px;
+}
+
+.card, .card-header{
+    background-color: #fff0;
+    border: 0px;
+}
+
+.btn{
+    font-size: 2em;
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn:hover, .btn:focus{
+    text-decoration: none;
+    color: #fff;
+    box-shadow: none;
+}
+
+footer{
+    text-align: right;
+    padding-right: 50px;
+    height: 5vh;
+}
+
+#Author{
+    position: absolute;
+    left: calc(100vw - 100px);
+    top: calc(100vh - 60px);
+}
