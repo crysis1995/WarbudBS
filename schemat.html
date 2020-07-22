@@ -23,6 +23,19 @@
         
     </main>
     <footer>
+      <div id="schemat-min">
+        <img src="img/schemat.png" class="schemat-min">
+      </div>
+      <nav id="schemat">
+        <img src="img/close-btn.svg" id="close-btn" class="close-btn">
+        Schemat
+        <div>
+          <button><a href="#">Alg1</a></button>
+        </div>
+        
+
+      </nav>
+
       <nav>
         <ul class="pagination">
           <li class="page-item">
@@ -44,5 +57,16 @@
       </nav>
         <a href="#" id="Author">Twórcy</a>
     </footer>
+
+    <script>
+      var schemat = document.getElementById("schemat");
+
+      document.getElementById("schemat-min").addEventListener("click", function(){
+        schemat.classList.add("full");
+      });
+      document.getElementById("close-btn").addEventListener("click", function(){
+        schemat.classList.remove("full");
+      });
+    </script>
 </body>
 </html>
