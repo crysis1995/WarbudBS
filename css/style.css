@@ -79,13 +79,13 @@ footer{
     background-color: #fff0;
     position: absolute;
     left: 0px;
-    top: 90vh;
+    top: 80vh;
     cursor: pointer;
 }
 
 .schemat-min{
-    height: 10vh;
-    width: 10vw;
+    height:20vh;
+    width: 20vw;
 }
 
 .schemat-max{
@@ -99,7 +99,6 @@ footer{
     background-image: url("https://svgshare.com/i/N4J.svg");
     position: absolute;
     left: 0px;
-    top: calc(100vh - 100px);
     transform: scale(0,0);
     transform-origin: bottom left;
     padding: 0px;
