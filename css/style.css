@@ -1,9 +1,9 @@
 body {
-    background-color: #293348;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #fff;
     margin: 0px;
     font-size: 1.2em;
+    background-color: #293348;
     background-image: url("https://svgshare.com/i/N4J.svg");
 }
 
@@ -63,7 +63,6 @@ main{
 }
 
 footer{
-    text-align: right;
     padding-right: 50px;
     height: 5vh;
 }
@@ -73,11 +72,55 @@ footer{
     left: calc(100vw - 100px);
     top: calc(100vh - 60px);
 }
-
-#board{
-    margin: auto;
+#schemat-min{
+    height: 10vh;
+    width: 10vw;
+    background-color: #fff0;
+    position: absolute;
+    left: 0px;
+    top: 90vh;
+    cursor: pointer;
 }
 
-#aaa{
-    max-width: 400px;
+.schemat-min{
+    height: 10vh;
+    width: 10vw;
+}
+
+#schemat{
+    z-index: 100;
+    background-color: #293348;
+    background-image: url("https://svgshare.com/i/N4J.svg");
+    position: absolute;
+    left: 0px;
+    top: calc(100vh - 100px);
+    transform: scale(0,0);
+    transform-origin: bottom left;
+}
+
+.full{
+
+animation: fullSchemat 1s ease-in-out forwards;
+    width: 100vw !important;
+    height: 100vh !important;
+    top: 0px !important;
+    
+}
+
+@keyframes fullSchemat{
+    from{
+        transform: scale(0,0);
+    }
+    to{
+        transform: scale(1,1);
+
+    }
+}
+
+.close-btn{
+    cursor: pointer;
+    width:20px;
+    position: absolute;
+    top: 30px;
+    left: calc(100vw - 50px);
 }
