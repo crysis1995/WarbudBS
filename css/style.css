@@ -29,7 +29,6 @@ nav{
 main{
     margin-top: 30px;
     padding: 0em;
-    display: inline-flex;
 }
 
 .card, .card-header{
@@ -129,4 +128,9 @@ animation: fullSchemat 1s ease-in-out forwards;
     position: absolute;
     top: 30px;
     left: calc(100vw - 50px);
+}
+
+img{
+    max-width: 300px;
+    max-height: 300px;
 }
