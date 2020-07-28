@@ -49,7 +49,7 @@ main{
 }
 
 .pagination{
-    position: absolute;
+    position: fixed;
     left: calc(50vw - 25*7px);
     top: calc(100vh - 70px);
 }
@@ -80,6 +80,7 @@ footer{
     left: 0px;
     top: 80vh;
     cursor: pointer;
+    position: fixed;
 }
 
 .schemat-min{
