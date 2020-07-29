@@ -5,28 +5,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Warbud BS</title>
 
-        <!--Bootstrap-->
+        <!-- CSS only -->
         <link
             rel="stylesheet"
-            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+            integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
             crossorigin="anonymous"
         />
-        <script
-            src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-            crossorigin="anonymous"
-        ></script>
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-            crossorigin="anonymous"
-        ></script>
-        <script
-            src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-            crossorigin="anonymous"
-        ></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
         <!--CSS-->
         <link rel="stylesheet" href="css/style.css" />
         <!--ReMAP-->
@@ -37,21 +23,34 @@
             <a href="index.html"><img src="img/home.svg" class="home" /></a>
         </nav>
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-5 p-5">
+            <div class="row px-5">
+                <div class="col-8 p-5">
                     <h1 class="display-2">{Title}</h1>
-
                     <p class="lead pt-5">
                         Cos tam o robieniu modeli ile to zajmuje i ze lepiej raz niz kilka W celu weryfikacji naszych
                         obliczeń stosujemy dwie ścieżki powstawania modelu konstrukcji. Modele te są przeliczane w dwóch
                         programach po czym weryfikujemy wyniki do uzyskania zbieżności modeli.
                     </p>
                 </div>
-                <div class="col-7">
-                    <img class="img-fluid mx-auto d-block" src="png/s1.png" />
+                <div class="col-12">
+                    <!-- <canvas id="myChart" style="width: 100px;"></canvas> -->
+                    <img class="img-fluid mx-auto d-block" style="max-width: 1000px;" src="png/s1.png" />
                 </div>
             </div>
         </div>
+
+        <!-- <div class="container-fluid">
+            <div class="row">
+                <div class="col-5 p-5">
+                    <h1 class="display-2">{Title}</h1>
+
+                    <p class="lead pt-5"></p>
+                </div>
+                <div class="col-7">
+                    <img class="img-fluid mx-auto d-block" />
+                </div>
+            </div>
+        </div> -->
 
         <!--Page nr-->
         <nav>
@@ -102,7 +101,21 @@
                 </div>
             </nav>
         </footer>
-
+        <script
+            src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+            integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+            crossorigin="anonymous"
+        ></script>
         <script>
             var schemat = document.getElementById("schemat");
 
@@ -114,6 +127,52 @@
             });
         </script>
         <script>
+            var ctx = document.getElementById("myChart").getContext("2d");
+            var myChart = new Chart(ctx, {
+                type: "bar",
+                data: {
+                    labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+                    datasets: [
+                        {
+                            label: "# of Votes",
+                            data: [12, 19, 3, 5, 2, 3],
+                            backgroundColor: [
+                                "rgba(255, 99, 132, 0.2)",
+                                "rgba(54, 162, 235, 0.2)",
+                                "rgba(255, 206, 86, 0.2)",
+                                "rgba(75, 192, 192, 0.2)",
+                                "rgba(153, 102, 255, 0.2)",
+                                "rgba(255, 159, 64, 0.2)",
+                            ],
+                            borderColor: [
+                                "rgba(255, 99, 132, 1)",
+                                "rgba(54, 162, 235, 1)",
+                                "rgba(255, 206, 86, 1)",
+                                "rgba(75, 192, 192, 1)",
+                                "rgba(153, 102, 255, 1)",
+                                "rgba(255, 159, 64, 1)",
+                            ],
+                            borderWidth: 1,
+                        },
+                    ],
+                },
+                options: {
+                    scales: {
+                        yAxes: [
+                            {
+                                ticks: {
+                                    beginAtZero: true,
+                                },
+                            },
+                        ],
+                    },
+                },
+            });
+        </script>
+        <script>
+            $(function () {
+                $('[data-toggle="tooltip"]').tooltip();
+            });
             imageMapResize();
         </script>
     </body>

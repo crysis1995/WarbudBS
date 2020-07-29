@@ -36,7 +36,7 @@
             <a href="index.html"><img src="img/home.svg" class="home" /></a>
         </nav>
         <div class="container-fluid">
-            <div class="row">
+            <div class="row px-5">
                 <div class="col-6 p-5">
                     <h1 class="display-2">{Title}</h1>
 
@@ -46,7 +46,7 @@
                     </p>
                 </div>
                 <div class="col-12 pt-5">
-                    <img class="img-fluid mx-auto d-block" src="png/s2.png" />
+                    <img class="img-fluid mx-auto d-block" src="png/s2.png" style="width: 50%;" />
                 </div>
             </div>
         </div>
@@ -112,6 +112,9 @@
             });
         </script>
         <script>
+            $(function () {
+                $('[data-toggle="tooltip"]').tooltip();
+            });
             imageMapResize();
         </script>
     </body>

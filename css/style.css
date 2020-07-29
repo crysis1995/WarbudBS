@@ -1,15 +1,15 @@
 body {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    color: #fff;
+    color: #000;
     margin: 0px;
     font-size: 1.2em;
-    background-color: #293348;
-    background-image: url("https://svgshare.com/i/N4J.svg");
+    background-color: #fff;
+    /* background-image: url("https://svgshare.com/i/N4J.svg");  */
 }
 
 a,
 a:hover {
-    color: #fff;
+    color: #000;
     text-decoration: none;
 }
 
@@ -35,14 +35,14 @@ main {
 
 .btn {
     font-size: 1.4em;
-    color: #fff;
+    color: rgb(94, 94, 94);
     text-decoration: none;
 }
 
 .btn:hover,
 .btn:focus {
     text-decoration: none;
-    color: #fff;
+    color: rgb(39, 39, 39);
     box-shadow: none;
 }
 
@@ -54,9 +54,13 @@ main {
 
 .page-link {
     background-color: #fff0;
-    color: #fff;
+    color: #424242;
     width: 50px;
     text-align: center;
+}
+
+.page-link:hover {
+    color: #424242;
 }
 
 footer {
@@ -93,8 +97,8 @@ footer {
 
 #schemat {
     z-index: 100;
-    background-color: #293348;
-    background-image: url("https://svgshare.com/i/N4J.svg");
+    background-color: #dddddd;
+    /* background-image: url("https://svgshare.com/i/N4J.svg"); */
     position: absolute;
     left: 0px;
     transform: scale(0, 0);
