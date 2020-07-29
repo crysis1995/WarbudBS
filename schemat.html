@@ -1,96 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Warbud BS</title>
-<!--Bootstrap-->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-<!--CSS-->
-  <link rel="stylesheet" href="css/style.css">
-<!--ReMAP-->
-  <script src="imagine-map-resizer.min.js"></script>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Warbud BS</title>
 
-  <nav>
-      <a href="index.html"><img src="img/home.svg" class="home"></a>    
-  </nav>
+        <!--Bootstrap-->
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+            crossorigin="anonymous"
+        />
+        <script
+            src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"
+        ></script>
+        <!--CSS-->
+        <link rel="stylesheet" href="css/style.css" />
+        <!--ReMAP-->
+        <script src="imagine-map-resizer.min.js"></script>
+    </head>
+    <body>
+        <nav>
+            <a href="index.html"><img src="img/home.svg" class="home" /></a>
+        </nav>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-5 p-5">
+                    <h1 class="display-2">{Title}</h1>
 
-  <main>
-    <p>
-      Cos tam o robieniu modeli ile to zajmuje i ze lepiej raz niz kilka
-      W celu weryfikacji naszych obliczeń stosujemy dwie ścieżki powstawania modelu konstrukcji. 
-      Modele te są przeliczane w dwóch programach po czym weryfikujemy wyniki do uzyskania zbieżności modeli.
-    </p>
-    <img src="png/s1.png">
-    <!--Page nr-->
-    <nav>
-      <ul class="pagination">
-        <li class="page-item">
-          <a class="page-link" href="#" aria-label="Previous">
-            <span aria-hidden="true">&laquo;</span>
-          </a>
-        </li>
-        <li class="page-item"><a class="page-link" href="#">1</a></li>
-        <li class="page-item"><a class="page-link" href="schematII.html">2</a></li>
-        <li class="page-item"><a class="page-link" href="schematIII.html">3</a></li>
-        <li class="page-item"><a class="page-link" href="schematIVa.html">4a</a></li>
-        <li class="page-item"><a class="page-link" href="schematIVb.html">4b</a></li>
-        <li class="page-item">
-          <a class="page-link" href="schematII.html" aria-label="Next">
-            <span aria-hidden="true">&raquo;</span>
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </main>
+                    <p class="lead pt-5">
+                        Cos tam o robieniu modeli ile to zajmuje i ze lepiej raz niz kilka W celu weryfikacji naszych
+                        obliczeń stosujemy dwie ścieżki powstawania modelu konstrukcji. Modele te są przeliczane w dwóch
+                        programach po czym weryfikujemy wyniki do uzyskania zbieżności modeli.
+                    </p>
+                </div>
+                <div class="col-7">
+                    <img class="img-fluid mx-auto d-block" src="png/s1.png" />
+                </div>
+            </div>
+        </div>
 
-  <footer>
-    <!--Min-->
-    <div id="schemat-min">
-      <img src="img/schemat.png" class="schemat-min">
-    </div>
+        <!--Page nr-->
+        <nav>
+            <ul class="pagination">
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                    </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="schematII.html">2</a></li>
+                <li class="page-item"><a class="page-link" href="schematIII.html">3</a></li>
+                <li class="page-item"><a class="page-link" href="schematIVa.html">4a</a></li>
+                <li class="page-item"><a class="page-link" href="schematIVb.html">4b</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="schematII.html" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
 
-    <!--Nav overlay-->
-    <nav id="schemat">
-      <img src="img/close-btn.svg" id="close-btn" class="close-btn">
-      <!--Map-->
-      <div class="schemat-max">
-        <img src="img/schematX2.png" class="schemat-max" alt="schemat"
-        usemap="#schematmap">
-        <map name="schematmap">
-          <area shape="rect" coords="560,550,860,700" alt="nativeModel" href="schemat.html">
-          <area shape="rect" coords="560,1100,860,1250" alt="modelCheck" href="schematII.html">
-          <area shape="rect" coords="1260,350,1560,500" alt="alg1" href="schematIVa.html">
-          <area shape="rect" coords="1260,750,1560,1050" alt="IFC" href="schematIII.html">
-          <area shape="rect" coords="1260,1300,1560,1450" alt="alg2" href="schematVa.html">
-          <area shape="rect" coords="1960,350,2260,500" alt="fem1" href="schematIVb.html">
-          <area shape="rect" coords="1960,750,2260,1050" alt="BFC" href="schematVI.html">
-          <area shape="rect" coords="1960,1300,2260,1450" alt="fem2" href="schematVb.html">
-          <area shape="rect" coords="2660,350,2960,500" alt="IDM" href="schematIX.html">
-          <area shape="rect" coords="2660,825,2960,975" alt="compare" href="schematVII.html">
-          <area shape="rect" coords="2660,1300,2960,1450" alt="archMep" href="schematVIII.html">
-        </map>
-      </div>
-    </nav>
-  </footer>
+        <footer>
+            <!--Min-->
+            <div id="schemat-min">
+                <img src="img/schemat.png" class="schemat-min" />
+            </div>
 
-  <script>
-    
-    var schemat = document.getElementById("schemat");
+            <!--Nav overlay-->
+            <nav id="schemat">
+                <img src="img/close-btn.svg" id="close-btn" class="close-btn" />
+                <!--Map-->
+                <div class="schemat-max">
+                    <img src="img/schematX2.png" class="schemat-max" alt="schemat" usemap="#schematmap" />
+                    <map name="schematmap">
+                        <area shape="rect" coords="560,550,860,700" alt="nativeModel" href="schemat.html" />
+                        <area shape="rect" coords="560,1100,860,1250" alt="modelCheck" href="schematII.html" />
+                        <area shape="rect" coords="1260,350,1560,500" alt="alg1" href="schematIVa.html" />
+                        <area shape="rect" coords="1260,750,1560,1050" alt="IFC" href="schematIII.html" />
+                        <area shape="rect" coords="1260,1300,1560,1450" alt="alg2" href="schematVa.html" />
+                        <area shape="rect" coords="1960,350,2260,500" alt="fem1" href="schematIVb.html" />
+                        <area shape="rect" coords="1960,750,2260,1050" alt="BFC" href="schematVI.html" />
+                        <area shape="rect" coords="1960,1300,2260,1450" alt="fem2" href="schematVb.html" />
+                        <area shape="rect" coords="2660,350,2960,500" alt="IDM" href="schematIX.html" />
+                        <area shape="rect" coords="2660,825,2960,975" alt="compare" href="schematVII.html" />
+                        <area shape="rect" coords="2660,1300,2960,1450" alt="archMep" href="schematVIII.html" />
+                    </map>
+                </div>
+            </nav>
+        </footer>
 
-    document.getElementById("schemat-min").addEventListener("click", function(){
-      schemat.classList.add("full");
-    });
-    document.getElementById("close-btn").addEventListener("click", function(){
-      schemat.classList.remove("full");
-    });
-  </script>
-  <script>imageMapResize();</script>
+        <script>
+            var schemat = document.getElementById("schemat");
 
-</body>
+            document.getElementById("schemat-min").addEventListener("click", function () {
+                schemat.classList.add("full");
+            });
+            document.getElementById("close-btn").addEventListener("click", function () {
+                schemat.classList.remove("full");
+            });
+        </script>
+        <script>
+            imageMapResize();
+        </script>
+    </body>
 </html>
